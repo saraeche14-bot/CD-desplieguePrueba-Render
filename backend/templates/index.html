@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Backend – Juegos de Prueba</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+  <div class="card">
+    <h1>Mini aplicación de videojuegos (Práctica 3)</h1>
+    <p>
+      Esta página está servida por <strong>Flask</strong> y carga los
+      videojuegos desde el endpoint <code>/api/games</code>.
+    </p>
+
+    <button id="reload-btn">Recargar juegos</button>
+
+    <div id="status" class="status">Cargando juegos...</div>
+    <ul id="game-list"></ul>
+  </div>
+
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
